@@ -29,7 +29,7 @@ qsa('a[href^="#"]').forEach(a=>{
 
 
 const numwhats = "5541998436600";
-const mensagemwhats = "Olá! Vim pelo portfólio e me interessei.";
+const mensagemwhats = "Olá! Vim pelo portfólio.";
 const url = `https://wa.me/${numwhats}?text=${encodeURIComponent(mensagemwhats)}`;
 
 document.getElementById("whatsapp-link").addEventListener("click", (e) => {
