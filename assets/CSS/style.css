@@ -2,7 +2,7 @@
   --max-width: 1200px;
   --bg-main: #001730;
   --bg-dark: #0b0b20;
-  --accent: #1BCFC9;
+  --accent: #20eae3;
   --text-main: #EAF6F6;
   --text-muted: #aae7fa;
 }
@@ -89,7 +89,10 @@ nav.primary {
   min-height: 75vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, var(--bg-main), var(--bg-dark));
+  background: linear-gradient(180deg, var(--bg-main), transparent), url(/assets/image/Cartoon.png);
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -116,9 +119,9 @@ nav.primary {
 }
 
 .hero-image img {
-  width: 420px;
+  width: 450px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.623);
 }
 
 /* SECTIONS */
@@ -176,11 +179,12 @@ nav.primary {
 }
 
 /* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.cards-estudo {
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .card {
@@ -189,6 +193,9 @@ nav.primary {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  width: 360px;
+  align-items: center;
+  justify-content: center;
 }
 
 .card h3 {
@@ -198,6 +205,7 @@ nav.primary {
 .card p {
   color: var(--text-muted);
   margin-bottom: 15px;
+  
 }
 
 .card span {
@@ -214,6 +222,24 @@ nav.primary {
   text-decoration: underline;
 }
 
+.cards-profi{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.cards-profi .card {
+  background: var(--bg-main);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
 /* BOTÕES */
 .btn {
   align-self: flex-end;
