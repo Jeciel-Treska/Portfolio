@@ -297,6 +297,7 @@ nav.primary {
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column;
+    justify-content: end;
     text-align: center;
   }
 
@@ -308,8 +309,8 @@ nav.primary {
     justify-content: center;
   }
 
-  .hero-image img {
-    width: 280px;
+  .hero-image {
+    display:none;
   }
 
   .btn {
